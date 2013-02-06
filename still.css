@@ -1,0 +1,294 @@
+* { margin:0;
+    padding:0;
+	behavior:url(PIE.htc);
+}
+body { background-color:#ABABAB; font-family:arial;}
+div#menu { margin:5px auto; }
+div#copyright {
+    font:11px 'Trebuchet MS';
+    color:#222;
+    text-indent:30px;
+    padding:40px 0 0 0;
+}
+div#copyright a { color:#09C; }
+div#copyright a:hover { color:#09C; }
+#kullanici_giris{
+float:center;
+width:500px;
+margin:0 auto;
+}
+
+.kullanici_giris{
+width:600px;
+font-size:12px;
+}
+.staj_yeri_ekle{
+width:445px;
+font-size:12px;
+}
+.mezun_olabilir{
+width:685px;
+font-size:12px;
+}
+.staj_bilgileri{
+width:920px;
+font-size:11px;
+}
+
+.staj_yeri{
+width:355px;
+font-size:12px;
+}
+.dokuman{
+width:355px;
+font-size:12px;
+}
+.ogrenci_bilgileri{
+width:920px;
+font-size:11px;
+}
+.kullanicilar{
+width:550px;
+font-size:11px;
+}
+.staj_yerleri{
+width:800px;
+font-size:11px;
+}
+
+.staj_turleri{
+width:600px;
+font-size:11px;
+}
+.toplam_staj_gunu{
+width:536px;
+font-size:11px;
+}
+.dokumanlar{
+width:475px;
+font-size:11px;
+}
+.profil{
+width:475px;
+font-size:11px;
+}
+.mezunlar{
+width:850px;
+font-size:11px;
+}
+.ogrenci2_bilgi{
+width:850px;
+font-size:11px;
+}
+.dokumanlarim{
+width:250px;
+font-size:11px;
+}
+.ogrenci2_staj{
+width:850px;
+font-size:10px;
+}
+.staj_bilgisi_duzenle{
+width:536px;
+font-size:11px;
+}
+.staj_bilgisi_ekle{
+width:593px;
+font-size:11px;
+}
+.ogrenci_ekle{
+width:439px;
+font-size:11px;
+}
+.ogrenci_duzenle{
+width:439px;
+font-size:11px;
+}
+.kullanici_ekle{
+width:439px;
+font-size:11px;
+}
+.staj_bilgileri_yer_ekle{
+width:474px;
+font-size:11px;
+}
+.ogrenci_sec{
+width:474px;
+font-size:11px;
+}
+.upload_ogrenci_sec{
+width:474px;
+font-size:11px;
+}
+.kullanici_duzenle{
+width:474px;
+font-size:11px;
+}
+.staj_yeri_duzenle{
+width:439px;
+font-size:11px;
+}
+.staj_turu_duzenle{
+width:439px;
+font-size:11px;
+}
+.staj_turu_ekle{
+width:439px;
+font-size:11px;
+}
+.dokuman_duzenle{
+width:539px;
+font-size:11px;
+}
+.upload{
+width:539px;
+font-size:11px;
+}
+.sifremi_unuttum{
+width:539px;
+font-size:11px;
+}
+.ortak_div_ozellikleri{
+background-color:#B3CFEB;
+padding:25px;
+float:center;
+margin:1% auto;
+border-radius:10px;
+z-index:1;
+box-shadow:0 0 15px;
+border:3px solid #1D438C;
+text-transform:capitalize;
+overflow:auto;
+}
+.staj_bilgisi_duzenle input,.staj_bilgisi_ekle input,.staj_bilgisi_duzenle select, .staj_bilgisi_ekle select{
+width:200px;
+}
+.ara{
+width:920px;
+font-size:10px;
+}
+
+.kullanici_ara{
+width:550px;
+}
+.staj_yerleri_ara{
+width:800px;
+}
+
+.staj_turleri_ara{
+width:600px;
+}
+.buton{
+background:black;
+border:2px solid #B3CFEB;
+color:white;
+text-decoration:none;
+cursor:pointer;
+font-size:14px;
+padding:5px;
+border-radius:15px 0px 15px 0px;
+}
+.buton:hover{
+border:2px solid #1D438C;
+border-radius:0px 15px 0px 15px;
+box-shadow:0 0 30px blue;
+}
+
+.duzenle{
+background-image:url(duzenle.png);
+background-repeat:no-repeat;
+}
+
+.sil{
+background-image:url(sil.png);
+background-repeat:no-repeat;
+}
+
+.duzenlemeler{
+	width:24px;
+	height:24px;
+	background-color:transparent;
+	border:none;
+}
+.duzenlemeler:hover{
+	cursor:pointer;
+}
+
+#tumunu_listele{
+float:right;
+margin-top:-30px;
+}
+#ara{
+background-image:url(ara.png);
+background-repeat:no-repeat;
+}
+
+
+#kullanici_giris tr{
+height:30px;
+}
+.text{
+width:150px;
+font-weight:400;
+}
+
+
+.bolum_adi{
+margin:0 5px;
+background-color:#F0F0F0;
+
+border-radius:0 0 15px 15px;
+cursor:pointer;
+box-shadow:0 0 15px;
+text-shadow:0 0 5px;
+overflow:auto;
+}
+.bolum_adi h1{
+padding:16px;
+}
+.baslik{
+font-size:15px;
+padding:2px;;
+}
+
+table td,table{
+border:none;
+}
+
+table td,table tr{
+border-bottom:1px solid #ABABAB;
+}
+
+.daha{
+border:1px solid #ccc;
+padding:5px;
+background-color:#f1f1f1;
+cursor:pointer;
+text-align:center;
+width:200px;
+margin:10px auto;
+box-shadow:0 0 10px;
+border-radius:10px;
+}
+.toplam_staj_text{
+width:246px;
+}
+.dokumanlar_ara{
+width:475px;
+}
+.mezun_buton{
+color:lime;
+}
+.staj_bilgileri tr,.ogrenci_bilgileri tr,.kullanicilar tr,.mezun_olabilir tr,.staj_yerleri tr,.ogrenci2_staj tr{
+color:#9C0B0B;
+}
+table{
+text-align:left;
+}
+a{
+color:green;
+text-decoration:none;
+}
+a:visited{
+color:blue;
+}

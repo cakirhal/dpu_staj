@@ -1,0 +1,3 @@
+Insert Into sorgusundan hemen sonra çaðrýlmalý:
+
+SELECT LAST_INSERT_ID();

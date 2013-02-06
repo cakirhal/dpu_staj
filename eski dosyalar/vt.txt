@@ -1,0 +1,67 @@
+CREATE  TABLE IF NOT EXISTS `stajotomasyonu`.`ogrenci` (
+  `id` INT NOT NULL AUTO_INCREMENT ,
+  `adi` VARCHAR(45) NULL ,
+  `soyadi` VARCHAR(45) NULL ,
+  `numarasi` VARCHAR(12) NULL ,
+  `telefon` VARCHAR(15) NULL ,
+  `mail` VARCHAR(20) NULL ,
+  PRIMARY KEY (`id`) )
+ENGINE = InnoDB;
+CREATE  TABLE IF NOT EXISTS `stajotomasyonu`.`staj_grubu` (
+  `id` INT NOT NULL AUTO_INCREMENT ,
+  `grup` VARCHAR(10) NULL ,
+  PRIMARY KEY (`id`) )
+ENGINE = InnoDB;
+
+CREATE  TABLE IF NOT EXISTS `stajotomasyonu`.`staj_yeri` (
+  `id` INT NOT NULL AUTO_INCREMENT ,
+  `adi` VARCHAR(45) NULL ,
+  `adres` VARCHAR(45) NULL ,
+  `telefon` VARCHAR(15) NULL ,
+  `mail` VARCHAR(20) NULL ,
+   PRIMARY KEY (`id`) )
+ENGINE = InnoDB;
+CREATE  TABLE IF NOT EXISTS `stajotomasyonu`.`staj_turu` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `ad` VARCHAR(45) NULL ,
+    PRIMARY KEY (`id`) )
+ENGINE = InnoDB;
+CREATE  TABLE IF NOT EXISTS `stajotomasyonu`.`staj` (
+  `id` INT NOT NULL AUTO_INCREMENT ,
+  `baslangic` DATE NULL ,
+  `bitis` DATE NULL ,
+  `kabulgun` INT NULL ,
+  `redgun` INT NULL ,
+  `toplam` INT NULL ,
+  `durum` VARCHAR(45) NULL ,
+  `aciklama` VARCHAR(45) NULL ,
+  `ogrenci_id` INT NOT NULL ,
+  `staj_grubu_id` INT NOT NULL ,
+  `staj_yeri_id` INT NOT NULL ,
+  `staj_turu_id` INT NOT NULL ,
+  PRIMARY KEY (`id`) ,
+  INDEX `fk_staj_ogrenci` (`ogrenci_id` ASC) ,
+  INDEX `fk_staj_staj_grubu` (`staj_grubu_id` ASC) ,
+  INDEX `fk_staj_staj_yeri` (`staj_yeri_id` ASC) ,
+  INDEX `fk_staj_staj_turu` (`staj_turu_id` ASC) ,
+  CONSTRAINT `fk_staj_ogrenci`
+    FOREIGN KEY (`ogrenci_id` )
+    REFERENCES `stajotomasyonu`.`ogrenci` (`id` )
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_staj_staj_grubu`
+    FOREIGN KEY (`staj_grubu_id` )
+    REFERENCES `stajotomasyonu`.`staj_grubu` (`id` )
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_staj_staj_yeri`
+    FOREIGN KEY (`staj_yeri_id` )
+    REFERENCES `stajotomasyonu`.`staj_yeri` (`id` )
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_staj_staj_turu`
+    FOREIGN KEY (`staj_turu_id` )
+    REFERENCES `stajotomasyonu`.`staj_turu` (`id` )
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;

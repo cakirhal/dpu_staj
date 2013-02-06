@@ -1,0 +1,23 @@
+ <html>
+<head>
+
+<script type="text/javascript">
+function aktar(id){
+var ad = document.getElementById('id').innerHTML;
+window.opener.document.getElementById("ad").value=id;
+window.close();
+}
+
+</script>
+</head>
+<body>
+<table>
+<td id="ad">mehmet</td>
+<td id="soyad">topcu</td>
+</table>
+<input type="button" onclick="aktar(ad)"/>
+
+
+
+</body>
+</html>
