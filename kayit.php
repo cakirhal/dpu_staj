@@ -1,5 +1,6 @@
 <?php
 //Veritabanı bağlantı dosyamızı çekiyoruz
+//vvvvvvvvvv
 require_once("vtbaglan.php");
  
 $adim = $_GET['adim'];
